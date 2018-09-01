@@ -1,0 +1,194 @@
+\documentclass[10pt]{beamer}
+\usepackage[cp1251]{inputenc}
+\usepackage[russian]{babel}
+
+\date{}
+\setbeamertemplate{navigation symbols}{} 
+
+\usetheme{Madrid} 
+
+\newtheorem{defin}{Определение}
+\newtheorem{theor}[defin]{Теорема}
+\newtheorem{lm}[defin]{Лемма}
+\newtheorem{con}[defin]{Следствие}
+\newtheorem{sen}[defin]{Предложение}
+\newtheorem{rem}[defin]{Замечание}
+
+
+
+
+\begin{document}
+\begin{frame}
+Пусть $C_p(X)$ и $C_p(Y)$ – пространства Фреше – Урысона, верно ли тогда, что и $C_p(X) \times C_p(Y)$ – тоже пространство Фреше – Урысона?
+
+\begin{defin}
+Пространство $Y$  называется пространством Фреше - Урысона, если для любой точки из $y \in \overline{A} \subset Y$, существует последовательность $\{y_n \}^\infty_{n = 1} \subset A$ сходящаяся к точке $y$
+\end{defin}
+
+\begin{theor}  
+    	Cледующие условия эквивалентны:\\*
+		1) $ C_p(X)$ - пространство Фреше - Урысона;\\*
+        2) В $X$ выполнено свойство $\gamma$.
+\end{theor}
+
+
+\par Пусть пространства $X$ и $Y$ обладают свойством $\gamma$, верно ли тогда, что пространство $X \oplus Y$ обладает свойством $\gamma$?
+
+
+
+\par Galvin F., Miller A. $\gamma$-sets and other singular sets of real numbers, I, Topol. and App. 1984.
+
+\end{frame}
+
+\begin{frame}
+\begin{defin}
+  Семейство $\mathcal{A}$ подмножеств множества $X$ называется $\omega$-покрытием этого множества, если для каждого конечного множества $K \subset X$ найдется $U \in \mathcal{A}$, такое, что $K \subset U$.
+\end{defin}
+
+
+
+\begin{defin}
+Будем говорить, что в топологическом пространстве $X$ выполнено свойство $\gamma$ (или $\gamma$ - свойство), если для любого открытого $\omega$ - покрытия $\eta$ пространства $X$ найдется последовательность $\xi \subset \eta$, такая, что $\underline{\lim \xi} = X$. При этом само пространство $X$ будем называть $\gamma$-пространством. 
+\end{defin}
+
+При этом $\underline{\lim \xi} = \cup \lbrace \cap \lbrace A_i | i \geq n   \rbrace | n \in \mathbb{N} \rbrace$, где $\xi = \lbrace A_n | n \in \mathbb{N} \rbrace-$ последовательность подмножеств $X$
+
+
+
+\end{frame}
+
+\begin{frame}
+
+\begin{itemize}
+\item если $X$ дискретно и является $\gamma$ - пространством, то $|X| \leq \aleph_0$.
+\item если $|X| \leq \aleph_0$ , то  $X$ обладает свойством $\gamma$.. 
+\item если  $X$ обладает свойством $\gamma$, то 
+\begin{itemize}
+\item $e(X) \leq \aleph_0$ 
+\item $dc(X) \leq \aleph_0$ 
+\item $ind X = 0$ 
+\item $X$ - линделефово.
+\end{itemize}
+\end{itemize}
+
+Примерами пространств со свойством $\gamma$ являются:
+\begin{itemize}
+\item Р - пространства с $l(X^n) \leq \aleph_0$, для всех $n \in \mathbb{N}$.
+\item разреженные компакты.
+\end{itemize}
+
+
+
+
+Примерами пространств не обладающими свойством $\gamma$ являются:
+\begin{itemize}
+\item отрезок $[0, 1]$ с топологией не слабее евклидовой.
+\item канторово множество и пространства содержащие его.
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+Операции, сохраняющие свойство $\gamma$. 
+\begin{itemize}
+
+\item Пусть $X$ является $\gamma$ - пространством, тогда:\\*
+		1) Если $f: X \rightarrow Y$ - непрерывное отображение на пространство $Y$, то $Y$ является $\gamma$ - пространством;\\*
+        2) Если $Z \subset X - $ замкнутое подпространство, то $Z$  является $\gamma$ - пространством.
+        
+\item Если $X$ удовлетворяет свойству $\gamma$, то $X^n$, где $n \in \mathbb{N}$, удовлетворяет свойству $\gamma$.
+
+\item Если $X$ обладает свойством $\gamma$, то $X \oplus X$ тоже $\gamma$ - пространство.
+
+\item Пусть в $X$ выполнено свойство $\gamma$ и $|Y| \leq \aleph_0$, тогда $X \oplus Y$ обладает свойством $\gamma$.
+
+\end{itemize} 
+\end{frame}
+
+\begin{frame}
+
+Пространства ординалов вида $[1, \alpha]$, будучи разреженными компактами, могут служить примерами $\gamma$ - пространств произвольно большого веса (мощности).
+
+\begin{defin}
+
+Конфинальностью $cf(\tau)$ ординала $\tau$ называется наименьший кардинал $\lambda$ такой, что множество мощности $|\tau |$ можно представить в виде объединения некоторого семейства мощности не большей, чем $\lambda$ множеств мощности меньшей, чем $|\tau |$. 
+\end{defin}
+
+\begin{theor}
+$[1,\beta)$ обладает свойством $\gamma$, тогда и только тогда, когда $cf(\beta) = \aleph_0$.
+\end{theor}
+
+\end{frame}
+
+
+
+\begin{frame}
+
+\begin{theor}
+	Пусть $X$ обладает свойством $\gamma$, тогда следующие условия эквивалентны:\\*
+		1) $X - $ метризуемо,\\*
+        2) $w(X)\leq \aleph_0$.
+\end{theor}
+
+\begin{sen}
+Пусть $X$ обладает свойством $\gamma$ и метризуемо, тогда $|X|\leq C$.
+\end{sen}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Заключение}
+
+\begin{itemize}
+\item Бесконечные произведения $\gamma$ - пространств являются $\gamma$ - пространствами в тривиальных случаях.
+\item критерий метризуемости $\gamma$ - пространств.
+\item когда пространства вида $[1, \beta)$ обладает свойством $\gamma$.  
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}
+\begin{thebibliography}{55}
+\addcontentsline{toc}{section}{Список литературы}
+
+
+
+\bibitem{Badmaev_Ar}  %здесь и далее слово author следует заменить на Вашу фамилию
+   Архангельский А.В.. Топологические пространства функций. М.
+
+\bibitem{Badmaev_Gel}
+Galvin F. On the Frechet-Urysohn property in spaces of continuous functions.
+In: Zdenek Frolik (ed.): Abstracta. 9th Winter School on Abstract Analysis.
+Czechoslovak Academy of Sciences, Praha, 1981. 
+
+\bibitem{Badmaev_GM}
+    Galvin F., Miller A. $\gamma$-sets and other singular sets of real numbers, I, Topol. and App. 1984.
+    
+\bibitem{Badmaev_GN1}
+   Gerlits J., Nagy Zs., Some properties of C(X), I, Topol. and App. 1982. 
+   
+\bibitem{Badmaev_NSP}
+   Natasha May, Santi Spadaro, Paul Szeptycki, A new class of spaces with all finite powers Lindel?f, Topol. and App. 2014. 
+   
+\bibitem{Badmaev_Tk}
+	Tkachuk, V.V., A Cp-Theory Problem Book Topological and Function Spaces. Springer, 2010.
+	
+\bibitem{Badmaev_tsu}  
+Бадмаев О.О., О
+топологических
+пространствах
+с
+$\gamma$ - свойством // 
+Всероссийская молодежная
+научная конференция
+«Все грани математики и
+механики»: Сб. статей. - Томск, 2017.
+
+\bibitem{Badmaev_ABL}
+Arnold W. Miller, Boaz Tsaban, Lyubomyr Zdomskyy, Selective covering properties of product spaces. Annals of Pure and Applied Logic. 2014
+
+
+\end{thebibliography}
+\end{frame}
+
+\end{document}
